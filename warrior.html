@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Warrior · The Way of the Samurai</title>
+  <meta name="description" content="Forged from childhood and defined by the blade, the samurai turned war into an art." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+
+  <!-- loading screen -->
+  <div class="loader">
+    <div class="mon"><span class="mon-core"></span></div>
+    <div class="loader-title">The Warrior</div>
+    <div class="progress-track"><div class="progress-fill"></div></div>
+    <div class="progress-pct">0 %</div>
+  </div>
+
+  <!-- page transition wipe -->
+  <div class="transition-panel"></div>
+
+  <!-- global sakura particle field -->
+  <canvas id="sakura-canvas" data-count="200"></canvas>
+
+  <!-- navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-title">THE WAY OF THE <span>SAMURAI</span></a>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="code.html">The Code</a></li>
+      <li><a href="warrior.html" class="active">The Warrior</a></li>
+      <li><a href="powershift.html">The Power Shift</a></li>
+      <li><a href="culture.html">The Culture</a></li>
+      <li><a href="legacy.html">The Legacy</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+
+    <!-- cinematic parallax header -->
+    <header class="theme-header">
+      <div class="parallax-bg layer-fog layer-mountains layer-forest"></div>
+      <div class="header-overlay"></div>
+      <p class="eyebrow">Theme II</p>
+      <h1>The Warrior</h1>
+      <p class="theme-desc">Forged from childhood and defined by the blade, the samurai turned war into an art.</p>
+    </header>
+
+    <!-- katana 3D showcase -->
+    <section class="model-showcase">
+      <canvas id="model-canvas" data-type="katana" data-src="models/dragon_katana_oni_koroshi.glb"></canvas>
+      <div class="model-caption">Oni Koroshi · drag to examine the blade</div>
+    </section>
+
+    <div class="container">
+      <section class="section entry reveal">
+        <p class="entry-index" data-stagger>Entry I</p>
+        <h2 data-stagger>Samurai Training from Childhood</h2>
+        <div class="entry-text" data-stagger>The making of a samurai began long before a warrior ever set foot on a battlefield. From childhood, young men of the warrior class were trained in the physical and mental disciplines that defined samurai identity. Early samurai warriors were primarily mounted archers who valued the bow and arrow above all other weapons, and training in horsemanship and archery began at a young age under strict supervision. Samurai were expected to supply their own weapons, armor, provisions, and attendants, which meant that preparation for war was also preparation for independent command and personal responsibility. The emphasis on self reliance and discipline that characterized samurai training was deeply connected to Zen Buddhism, whose teachings on mental focus and acceptance of death made the samurai some of Zen's most devoted practitioners. This combination of physical rigor and philosophical depth meant that samurai education produced not just skilled fighters but disciplined human beings shaped by a coherent vision of what a warrior should be.</div>
+        <figure class="entry-image" data-stagger><div class="img-frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Yabusame_in_Asakusa%2C_Tokyo_%288664146247%29.jpg/1280px-Yabusame_in_Asakusa%2C_Tokyo_%288664146247%29.jpg" data-full="https://upload.wikimedia.org/wikipedia/commons/f/f0/Yabusame_in_Asakusa%2C_Tokyo_%288664146247%29.jpg" alt="A young samurai practicing mounted archery" loading="lazy" decoding="async" /></div><figcaption>Yabusame mounted archery performance in Asakusa, Tokyo, continuing the samurai kyudo tradition, photo by Takashi Hososhima, 2013. Wikimedia Commons. CC BY SA 2.0.</figcaption></figure>
+        <div class="entry-citation" data-stagger><span class="label">Source</span>Segal, Ethan. "Medieval Japan: An Introductory Essay." Program for Teaching East Asia, University of Colorado Boulder, 2008. https://www.colorado.edu/ptea-curriculum/imaging-japanese-history-4.</div>
+      </section>
+      <div class="brushstroke"></div>
+      <section class="section entry reveal">
+        <p class="entry-index" data-stagger>Entry II</p>
+        <h2 data-stagger>The Sword and Its Symbolism</h2>
+        <div class="entry-text" data-stagger>The Japanese sword was far more than a weapon. It was the physical embodiment of the samurai's soul, a work of art, and the product of a forging tradition so refined that the process itself was considered a sacred act. The Metropolitan Museum of Art describes the making of a Japanese blade as a subtle and careful art that developed over centuries in response to both technical improvements and aesthetic considerations, meaning that beauty and function were never separated in the sword maker's craft. The visible patterns on a finished blade, the surface grain created by folding the steel and the temper line running along the edge, were considered works of art in their own right, admired and studied the way a painter's brushwork is studied. The blade was the true centerpiece of the finished sword, an example of the ingenuity of centuries of Japanese smiths and their desire to achieve the perfect blend of technology and art. For the samurai who carried it, the sword was identity made physical, a daily reminder of the discipline, refinement, and deadly purpose that the warrior class represented.</div>
+        <figure class="entry-image" data-stagger><div class="img-frame"><img src="https://images.metmuseum.org/CRDImages/aa/original/DP368606.jpg" data-full="https://images.metmuseum.org/CRDImages/aa/original/DP368606.jpg" alt="A close study of a katana blade" loading="lazy" decoding="async" /></div><figcaption>Blade for a Sword (Katana), inscribed by swordsmith Masazane, dated 1526, showing the rare ayasugihada grain pattern. The Metropolitan Museum of Art. Public domain.</figcaption></figure>
+        <div class="entry-citation" data-stagger><span class="label">Source</span>The Metropolitan Museum of Art. "The Japanese Blade: Technology and Manufacture." October 1, 2003. https://www.metmuseum.org/essays/the-japanese-blade-technology-and-manufacture.</div>
+      </section>
+      <div class="brushstroke"></div>
+      <section class="section entry reveal">
+        <p class="entry-index" data-stagger>Entry III</p>
+        <h2 data-stagger>Samurai Armor Design and Meaning</h2>
+        <div class="entry-text" data-stagger>Samurai armor was not simply protective equipment but a statement of identity, spiritual belief, and artistic sensibility worn into battle. Unlike European armor formed of solid steel plates, Japanese armor was constructed from hundreds of small iron and leather plates covered with lacquer and laced together with silk cords, a design that provided both flexibility for a mounted archer and a surface rich with decorative possibility. The breast of a great Kamakura period armor in the Metropolitan Museum collection is decorated with a stenciled leather representation of Fudo Myoo, a fierce Buddhist guardian deity known for his calmness and unyielding nerve, qualities the samurai sought to embody in combat. This integration of Buddhist iconography into battlefield equipment reveals how deeply spiritual conviction was woven into samurai military culture. The armor was not put on to become a warrior but to announce what kind of warrior one already was, and the craftsmanship invested in its construction reflected the status, faith, and aesthetic values of the man who wore it.</div>
+        <figure class="entry-image" data-stagger><div class="img-frame"><img src="https://images.metmuseum.org/CRDImages/aa/web-large/DP-18838-005.jpg" data-full="https://images.metmuseum.org/CRDImages/aa/original/DP-18838-005.jpg" alt="Lamellar samurai armor with a crested helmet" loading="lazy" decoding="async" /></div><figcaption>Armor (Yoroi) of Ashikaga Takauji (1305 to 1358), early 14th century. The Metropolitan Museum of Art. Public domain.</figcaption></figure>
+        <div class="entry-citation" data-stagger><span class="label">Source</span>Pyhrr, Stuart. "Armor (Yoroi) of Ashikaga Takauji (1305-1358), Part 1." Audio Guide no. 4436. The Metropolitan Museum of Art. https://www.metmuseum.org/audio-guide/4436.</div>
+      </section>
+      <div class="brushstroke"></div>
+      <section class="section entry reveal">
+        <p class="entry-index" data-stagger>Entry IV</p>
+        <h2 data-stagger>Samurai Art and the Culture of Weapons</h2>
+        <div class="entry-text" data-stagger>The samurai did not merely use their weapons as tools of war but elevated them into objects of cultural significance and artistic beauty. Swords, armor, helmets, and riding equipment were crafted with the same care and aesthetic intention as paintings or poetry, and the finest examples became so celebrated that individual blades were given names and passed down through generations as treasured heirlooms. The pattern of a ground and polished blade was considered a form of art, and some blades became so famous that they have names. Decorated sword fittings, lacquered scabbards, and silk wrapped handles were produced by specialist craftsmen whose work was collected and admired independently of any military function. During more peaceful periods, saddles and stirrups were created for famous samurai lords using gold, lacquer, and silk, and these objects survive today in museum collections as evidence of a warrior class that understood beauty and power as inseparable. The samurai transformed the instruments of violence into a complete artistic tradition, one that defined Japanese aesthetic culture for centuries.</div>
+        <figure class="entry-image" data-stagger><div class="img-frame"><img src="https://images.metmuseum.org/CRDImages/aa/web-large/LC-36_120_79-002.jpg" data-full="https://images.metmuseum.org/CRDImages/aa/original/LC-36_120_79-002.jpg" alt="A decorated sword guard treated as an art object" loading="lazy" decoding="async" /></div><figcaption>Sword Guard (Tsuba), bamboo and rock design inscribed by Ishiguro Masayoshi, 19th century. The Metropolitan Museum of Art. Public domain.</figcaption></figure>
+        <div class="entry-citation" data-stagger><span class="label">Source</span>Stern, Fred. "Samurai: A Thousand Years of Warriors." World and I, January 2010. Gale In Context: World History. https://link-gale-com.eznvcc.vccs.edu/apps/doc/A216960958/WHIC?u=viva2_nvcc&amp;sid=bookmark-WHIC&amp;xid=3098b721.</div>
+      </section>
+    </div>
+
+    <!-- theme navigation footer -->
+    <nav class="theme-footer">
+      <a class="prev" href="code.html">
+        <div class="arrow-row"><span class="arr">&laquo;</span></div>
+        <small>Previous</small>
+        <strong>The Code</strong>
+      </a>
+      <a class="next" href="powershift.html">
+        <small>Next</small>
+        <strong>The Power Shift</strong>
+        <div class="arrow-row"><span class="arr">&raquo;</span></div>
+      </a>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">THE WAY OF THE SAMURAI &nbsp;·&nbsp; FEUDAL JAPAN, 900 TO 1300 CE</footer>
+
+  <!-- Three.js + loaders -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/lights/RectAreaLightUniformsLib.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="main.js?v=2"></script>
+</body>
+</html>

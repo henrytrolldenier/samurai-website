@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Legacy · The Way of the Samurai</title>
+  <meta name="description" content="The warrior ethos outlived its wars, becoming the enduring template of Japanese power." />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- social sharing -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="The Way of the Samurai" />
+  <meta property="og:title" content="The Legacy · The Way of the Samurai" />
+  <meta property="og:description" content="The warrior ethos outlived its wars, becoming the enduring template of Japanese power." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="The Legacy · The Way of the Samurai" />
+  <meta name="twitter:description" content="The warrior ethos outlived its wars, becoming the enduring template of Japanese power." />
+
+  <!-- favicon (JS injects the same mark as a fallback if this is stripped) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%230a0a0a'/><circle cx='16' cy='16' r='11' fill='none' stroke='%238b0000' stroke-width='2.5'/><circle cx='16' cy='16' r='4.5' fill='%23c9a84c'/></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+
+  <!-- loading screen -->
+  <div class="loader">
+    <div class="mon"><span class="mon-core"></span></div>
+    <div class="loader-title">The Legacy</div>
+    <div class="progress-track"><div class="progress-fill"></div></div>
+    <div class="progress-pct">0 %</div>
+  </div>
+
+  <!-- page transition wipe -->
+  <div class="transition-panel"></div>
+
+  <!-- global sakura particle field -->
+  <canvas id="sakura-canvas" data-count="200"></canvas>
+
+  <!-- navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-title">THE WAY OF THE <span>SAMURAI</span></a>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="code.html">The Code</a></li>
+      <li><a href="warrior.html">The Warrior</a></li>
+      <li><a href="powershift.html">The Power Shift</a></li>
+      <li><a href="culture.html">The Culture</a></li>
+      <li><a href="legacy.html" class="active">The Legacy</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+
+    <!-- cinematic parallax header -->
+    <header class="theme-header">
+      <div class="parallax-bg layer-fog layer-mountains layer-forest"></div>
+      <div class="header-overlay"></div>
+      <p class="eyebrow">Theme V</p>
+      <h1>The Legacy</h1>
+      <p class="theme-desc">The warrior ethos outlived its wars, becoming the enduring template of Japanese power.</p>
+    </header>
+
+    <div class="container">
+      <section class="section entry reveal">
+        <p class="entry-index" data-stagger>Entry I</p>
+        <h2 data-stagger>The Cultural Legacy of the Samurai</h2>
+        <div class="entry-text" data-stagger>The legacy of the samurai class extends far beyond the medieval period in which they rose to power, shaping Japanese identity, art, and national character in ways that remain visible today. The samurai were not a passing military phenomenon but the architects of a civilizational model that defined Japan for nearly seven centuries, from the establishment of the Kamakura Shogunate in 1192 to the Meiji Restoration in 1868. During that entire span, the samurai class governed Japan, set its aesthetic standards, patronized its arts, shaped its religion, and defined its moral vocabulary. The disciplined culture that the samurai built reshaped Japan's social hierarchy and produced a class that was simultaneously warrior, administrator, artist, and moral exemplar. The samurai comparison with medieval European knights is illuminating but ultimately insufficient: where chivalry faded with the medieval period in Europe, the samurai model proved more durably transformative, embedding itself so deeply in Japanese culture that its values, warrior spirit, loyalty, duty, self discipline, and self denial, lingered long after the samurai class itself was abolished.</div>
+        <figure class="entry-image" data-stagger><div class="img-frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Statue_of_Kanamori_Nagachika.jpg/1280px-Statue_of_Kanamori_Nagachika.jpg" data-full="https://upload.wikimedia.org/wikipedia/commons/b/bb/Statue_of_Kanamori_Nagachika.jpg" alt="A modern statue of a samurai lord" loading="lazy" decoding="async" /></div><figcaption>Equestrian statue of samurai lord Kanamori Nagachika at Shiroyama Park, Takayama, Gifu Prefecture. Wikimedia Commons. CC BY SA 3.0.</figcaption></figure>
+        <div class="entry-citation" data-stagger><span class="label">Source</span>"Samurai." In Gale World History Online Collection. Detroit, MI: Gale, 2022. Gale In Context: World History. https://link-gale-com.eznvcc.vccs.edu/apps/doc/TTNVXD391635866/WHIC?u=viva2_nvcc&amp;sid=bookmark-WHIC&amp;xid=39835c05.</div>
+      </section>
+      <div class="brushstroke"></div>
+      <section class="section entry reveal">
+        <p class="entry-index" data-stagger>Entry II</p>
+        <h2 data-stagger>The Shogunate as Permanent Government</h2>
+        <div class="entry-text" data-stagger>When Minamoto Yoritomo established the Kamakura Shogunate in 1185, he did not merely win a war. He invented a form of government that Japan would use for the next seven hundred years. The shogunate, a military government led by a warrior chief ruling in the name of a ceremonial emperor, became the permanent template of Japanese political life through three successive dynasties: the Kamakura shogunate from 1185, the Ashikaga shogunate from 1336, and the Tokugawa shogunate from 1600. Each successive shogunate built directly on the Kamakura model, maintaining the same fundamental structure of warrior rule, provincial administration through appointed samurai, and the fiction of imperial legitimacy. Some form of military leadership remained the form of government in Japan until 1868, when a centralized bureaucratic government came into being with the Meiji Restoration, making the samurai governmental model one of the most durable political institutions in world history. The Kamakura samurai did not just seize power. They defined what power looked like in Japan for centuries to come.</div>
+        <figure class="entry-image" data-stagger><div class="img-frame"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Map-of-Japan-1183-Heian-Genpei-War.png" data-full="https://upload.wikimedia.org/wikipedia/commons/c/ca/Map-of-Japan-1183-Heian-Genpei-War.png" alt="A map of warrior clan domains in feudal Japan" loading="lazy" decoding="async" /></div><figcaption>Map of Japan in 1183, showing Taira, Minamoto, and Northern Fujiwara clan domains during the Genpei War. Wikimedia Commons, by Artanisen. CC BY SA 4.0.</figcaption></figure>
+        <div class="entry-citation" data-stagger><span class="label">Source</span>Asia for Educators, Columbia University. "The Age of the Samurai: 1185-1868." Weatherhead East Asian Institute, Columbia University. Accessed June 28, 2026. https://afe.easia.columbia.edu/special/japan_1000ce_samurai.htm.</div>
+      </section>
+      <div class="brushstroke"></div>
+      <section class="section entry reveal">
+        <p class="entry-index" data-stagger>Entry III</p>
+        <h2 data-stagger>Why the Samurai Model Endured</h2>
+        <div class="entry-text" data-stagger>The durability of the samurai model was not an accident of history but the result of a system that fused landownership, military authority, legal jurisdiction, and moral legitimacy into a single indivisible structure. The samurai did not merely control armies but owned the land, administered the law, and defined the ethical standards of the society they governed, making them structurally impossible to dislodge without dismantling the entire fabric of Japanese civilization. The political and social organization of medieval Japan is extremely remote from that of contemporary Japanese society, but many of the attitudes developed then, and preserved and reshaped in the later phases of Japanese feudalism, survived into modern times. The warrior spirit and its sense of values were easily revived by later generations because they had been so deeply embedded in Japanese culture through centuries of samurai governance, education, and art. The strong spirit of loyalty, duty, self discipline, and self denial that the samurai institutionalized shaped the Japanese personality across every subsequent era. The samurai model endured because it was not just a system of government but a complete vision of how human beings should live.</div>
+        <figure class="entry-image" data-stagger><div class="img-frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ote-mon_gate_Edo_Castle_Tokyo_Japan_by_Don_Ramey_Logan.jpg/1280px-Ote-mon_gate_Edo_Castle_Tokyo_Japan_by_Don_Ramey_Logan.jpg" data-full="https://upload.wikimedia.org/wikipedia/commons/f/fa/Ote-mon_gate_Edo_Castle_Tokyo_Japan_by_Don_Ramey_Logan.jpg" alt="The seat of the Tokugawa shogunate" loading="lazy" decoding="async" /></div><figcaption>Ote mon Gate, Edo Castle, Tokyo, seat of the Tokugawa shogunate, photo by Don Ramey Logan, 2008. Wikimedia Commons. CC BY SA 3.0.</figcaption></figure>
+        <div class="entry-citation" data-stagger><span class="label">Source</span>Reischauer, Edwin O., and Marius B. Jansen. The Japanese Today: Change and Continuity. Cambridge, MA: Belknap Press of Harvard University Press, 1995. Reproduced at San Jose State University Faculty Resource. Accessed June 28, 2026. https://sjsu.edu/faculty/y.shimazu/feudalism.html.</div>
+      </section>
+      <div class="brushstroke"></div>
+      <section class="section entry reveal">
+        <p class="entry-index" data-stagger>Entry IV</p>
+        <h2 data-stagger>Samurai and the Heian Artistic Inheritance</h2>
+        <div class="entry-text" data-stagger>When the samurai came to power in 1185 they did not erase the civilization they inherited from the Heian court but absorbed and continued it, transforming aristocratic refinement into the cultural foundation of warrior rule. The great literary and artistic achievements of the Heian period, its poetry, its Buddhist aesthetics, its appreciation of natural beauty and impermanence, did not disappear with the fall of the court nobility but passed into the hands of the warrior class that replaced them. Even the samurai of later ages owed a debt to the Heian aristocrats, inheriting and developing their Buddhism, their poetry, and their appreciation of beauty, creating a civilization that was neither purely military nor purely courtly but a distinctive fusion of both. Later literature, from medieval Noh drama to the tea ceremony to the art of the sword, reworked and reexamined Heian themes until the samurai had made them their own. As the political power in Japan shifted from the nobles to the samurai, art and literature began to favor realism and warriors' tastes, far different from the refined aesthetics of the Heian period, yet always in dialogue with them. The samurai did not conquer Japanese culture. They completed it.</div>
+        <figure class="entry-image" data-stagger><div class="img-frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Cha_no_yu_nichinichis%C5%8D_by_Mizuno_Toshikata_13.jpg/1280px-Cha_no_yu_nichinichis%C5%8D_by_Mizuno_Toshikata_13.jpg" data-full="https://upload.wikimedia.org/wikipedia/commons/7/72/Cha_no_yu_nichinichis%C5%8D_by_Mizuno_Toshikata_13.jpg" alt="The tea ceremony inherited and refined by the samurai" loading="lazy" decoding="async" /></div><figcaption>Koicha Temae, from the series A Tea Ceremony Periwinkle, woodblock print by Mizuno Toshikata, 1897. Wikimedia Commons. Public domain.</figcaption></figure>
+        <div class="entry-citation" data-stagger><span class="label">Source</span>Asia for Educators. "Literature of the Heian Period: 794-1185." Columbia University. Accessed June 28, 2026. https://afe.easia.columbia.edu/special/japan_600ce_heian.htm.</div>
+      </section>
+    </div>
+
+    <!-- theme navigation footer -->
+    <nav class="theme-footer">
+      <a class="prev" href="culture.html">
+        <div class="arrow-row"><span class="arr">&laquo;</span></div>
+        <small>Previous</small>
+        <strong>The Culture</strong>
+      </a>
+      <a class="next" href="index.html">
+        <small>Next</small>
+        <strong>Home</strong>
+        <div class="arrow-row"><span class="arr">&raquo;</span></div>
+      </a>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">THE WAY OF THE SAMURAI &nbsp;·&nbsp; FEUDAL JAPAN, 900 TO 1300 CE</footer>
+
+  <!-- Three.js (ambient sakura petal field) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js?v=2"></script>
+</body>
+</html>

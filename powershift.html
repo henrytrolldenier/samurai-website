@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Power Shift · The Way of the Samurai</title>
+  <meta name="description" content="How a refined court lost its grip and warriors became the true rulers of Japan." />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- social sharing -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="The Way of the Samurai" />
+  <meta property="og:title" content="The Power Shift · The Way of the Samurai" />
+  <meta property="og:description" content="How a refined court lost its grip and warriors became the true rulers of Japan." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="The Power Shift · The Way of the Samurai" />
+  <meta name="twitter:description" content="How a refined court lost its grip and warriors became the true rulers of Japan." />
+
+  <!-- favicon (JS injects the same mark as a fallback if this is stripped) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%230a0a0a'/><circle cx='16' cy='16' r='11' fill='none' stroke='%238b0000' stroke-width='2.5'/><circle cx='16' cy='16' r='4.5' fill='%23c9a84c'/></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+
+  <!-- loading screen -->
+  <div class="loader">
+    <div class="mon"><span class="mon-core"></span></div>
+    <div class="loader-title">The Power Shift</div>
+    <div class="progress-track"><div class="progress-fill"></div></div>
+    <div class="progress-pct">0 %</div>
+  </div>
+
+  <!-- page transition wipe -->
+  <div class="transition-panel"></div>
+
+  <!-- global sakura particle field -->
+  <canvas id="sakura-canvas" data-count="200"></canvas>
+
+  <!-- navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-title">THE WAY OF THE <span>SAMURAI</span></a>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="code.html">The Code</a></li>
+      <li><a href="warrior.html">The Warrior</a></li>
+      <li><a href="powershift.html" class="active">The Power Shift</a></li>
+      <li><a href="culture.html">The Culture</a></li>
+      <li><a href="legacy.html">The Legacy</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+
+    <!-- cinematic parallax header -->
+    <header class="theme-header">
+      <div class="parallax-bg layer-fog layer-mountains"></div>
+      <div class="header-overlay"></div>
+      <p class="eyebrow">Theme III</p>
+      <h1>The Power Shift</h1>
+      <p class="theme-desc">How a refined court lost its grip and warriors became the true rulers of Japan.</p>
+    </header>
+
+    <div class="container">
+      <section class="section entry reveal">
+        <p class="entry-index" data-stagger>Entry I</p>
+        <h2 data-stagger>The Decline of the Heian Court</h2>
+        <div class="entry-text" data-stagger>The imperial court of the Heian period represented the height of Japanese aristocratic civilization, a world of refined poetry, elaborate ritual, and courtly elegance centered in the capital at Kyoto. Yet the very success of this culture contained the seeds of its undoing. The luxuries and amusements of court life had become so attractive that many aristocrats abandoned their far flung estates to spend more time in the capital, entrusting their wealth generating domains to the hands of their stewards, the samurai. As the aristocracy withdrew from the provinces, the warrior class that managed their lands grew in power, independence, and military capability. The imperial court retained its prestige and symbolic authority but steadily lost its ability to govern, maintain order, or project force beyond the capital. By the late Heian period the emperor and his court had become dependent on the very warriors they had once employed as servants, and the stage was set for a permanent transfer of power from the nobility to the samurai class.</div>
+        <figure class="entry-image" data-stagger><div class="img-frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Anonymous_-_%E2%80%9CA_Branch_of_Sacred_Evergreen%E2%80%9D_%28Sakaki%29%2C_from_the_Phantom_Genji_Scrolls_%28Maboroshi_no_Genji_monogatari_emaki%29_-_2015.300.36a%2C_b_-_Metropolitan_Museum_of_Art.jpg/1280px-Anonymous_-_%E2%80%9CA_Branch_of_Sacred_Evergreen%E2%80%9D_%28Sakaki%29%2C_from_the_Phantom_Genji_Scrolls_%28Maboroshi_no_Genji_monogatari_emaki%29_-_2015.300.36a%2C_b_-_Metropolitan_Museum_of_Art.jpg" data-full="https://upload.wikimedia.org/wikipedia/commons/1/18/Anonymous_-_%E2%80%9CA_Branch_of_Sacred_Evergreen%E2%80%9D_%28Sakaki%29%2C_from_the_Phantom_Genji_Scrolls_%28Maboroshi_no_Genji_monogatari_emaki%29_-_2015.300.36a%2C_b_-_Metropolitan_Museum_of_Art.jpg" alt="The refined world of the Heian court" loading="lazy" decoding="async" /></div><figcaption>A Branch of Sacred Evergreen (Sakaki), from the Phantom Genji Scrolls, mid 17th century. Wikimedia Commons, Metropolitan Museum of Art. CC0 1.0.</figcaption></figure>
+        <div class="entry-citation" data-stagger><span class="label">Source</span>Kasulis, Thomas. "Japanese Philosophy." In The Stanford Encyclopedia of Philosophy (Summer 2024 Edition), edited by Edward N. Zalta and Uri Nodelman. https://plato.stanford.edu/archives/sum2024/entries/japanese-philosophy/.</div>
+      </section>
+      <div class="brushstroke"></div>
+      <section class="section entry reveal">
+        <p class="entry-index" data-stagger>Entry II</p>
+        <h2 data-stagger>The Genpei War</h2>
+        <div class="entry-text" data-stagger>The Genpei War of 1180 to 1185 was the decisive conflict that ended the Heian aristocratic order and transferred power permanently to the samurai class. Fought between the Taira and Minamoto warrior clans, it was a war that shook Japan to its foundations, producing battles of legendary ferocity and episodes of honor and tragedy that were recorded in Japan's greatest war epic, the Tale of the Heike. The opening lines of that epic capture the era's spirit of transformation: the sound of the bell of the Gion temple echoes the impermanence of all things, and the proud ones do not last long, but vanish like a spring night's dream. The war's emotional complexity is perhaps best captured in the death of Atsumori, where a Minamoto warrior laments after killing a young Taira nobleman, crying out that only because he was born of a warrior family must he suffer this affliction. With the Taira's defeat in 1185 and the establishment of a new warrior government by the victorious Minamoto, the medieval age of samurai rule began and the world of the Heian court was gone forever.</div>
+        <figure class="entry-image" data-stagger><div class="img-frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Genpei_kassen.jpg/1280px-Genpei_kassen.jpg" data-full="https://upload.wikimedia.org/wikipedia/commons/7/78/Genpei_kassen.jpg" alt="A battle scene from the Genpei War" loading="lazy" decoding="async" /></div><figcaption>Genpei Battle Screen depicting the Battle of Ichi no Tani, attributed to Kano Motonobu, Muromachi period. Wikimedia Commons, Akama Jingu shrine collection. Public domain.</figcaption></figure>
+        <div class="entry-citation" data-stagger><span class="label">Source</span>Asia for Educators, Weatherhead East Asian Institute, Columbia University. "The Tale of the Heike." Translated excerpts from Hiroshi Kitagawa and Bruce T. Tsuchida, trans. The Tale of the Heike. Tokyo: University of Tokyo Press, 1975. https://afe.easia.columbia.edu/special/japan_1000ce_heike.htm.</div>
+      </section>
+      <div class="brushstroke"></div>
+      <section class="section entry reveal">
+        <p class="entry-index" data-stagger>Entry III</p>
+        <h2 data-stagger>The Kamakura Shogunate</h2>
+        <div class="entry-text" data-stagger>The establishment of the Kamakura Shogunate in 1192 marked the moment when samurai power became institutionalized and permanent. When Minamoto Yoritomo was named shogun, or military dictator, he created a new form of government called the bakufu, or tent government, that would govern Japan for centuries. He appointed warriors to fill important administrative and judicial posts throughout the country, cementing the samurai class as the main political power in Japan and stripping the aristocracy of any remaining governing function. As the samurai gained power they seized land from the aristocracy, further weakening the royal court and consolidating warrior control over the provinces. The Kamakura government was run by a network of samurai pledged to keep the peace and gradually the samurai took the lead in developing the law of the nation. For the first time in Japanese history, military men governed not just armies but courts, estates, and the daily lives of ordinary people, transforming Japan from an aristocratic society into a warrior civilization.</div>
+        <figure class="entry-image" data-stagger><div class="img-frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Minamoto_no_Yoritomo.jpg/1280px-Minamoto_no_Yoritomo.jpg" data-full="https://upload.wikimedia.org/wikipedia/commons/7/76/Minamoto_no_Yoritomo.jpg" alt="Portrait of Minamoto no Yoritomo" loading="lazy" decoding="async" /></div><figcaption>Traditional hanging scroll portrait of Minamoto no Yoritomo, founder of the Kamakura Shogunate, attributed to Fujiwara no Takanobu, 1179. Wikimedia Commons, Jingo ji Temple collection. Public domain.</figcaption></figure>
+        <div class="entry-citation" data-stagger><span class="label">Source</span>"Kamakura Period." In Gale World History Online Collection. Detroit, MI: Gale, 2022. Gale In Context: World History. https://link-gale-com.eznvcc.vccs.edu/apps/doc/KQCBGB561849652/WHIC?u=viva2_nvcc&amp;sid=bookmark-WHIC&amp;xid=1f12e833.</div>
+      </section>
+      <div class="brushstroke"></div>
+      <section class="section entry reveal">
+        <p class="entry-index" data-stagger>Entry IV</p>
+        <h2 data-stagger>The Emperor as Figurehead</h2>
+        <div class="entry-text" data-stagger>After the establishment of the Kamakura Shogunate, the Japanese emperor retained his ceremonial prestige and symbolic legitimacy but lost all real governing power. The new military government centered its operations in Kamakura, deliberately leaving the court and the emperor in Kyoto, physically and politically separated from the machinery of actual rule. Although the bakufu existed alongside the imperial court, it came to possess military, administrative, and judicial functions that reduced the aristocracy to mere figureheads, present in ceremony but absent from power. The shogunate issued binding legal orders, appointed provincial governors, resolved land disputes, and maintained armies, while the emperor performed rituals and granted titles that the warrior government had already decided to bestow. This arrangement, in which symbolic imperial authority coexisted with real samurai power, became the template for Japanese governance for nearly seven centuries. The emperor was not abolished but hollowed out, preserved as a source of legitimacy while the samurai ruled in his name.</div>
+        <figure class="entry-image" data-stagger><div class="img-frame"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Emperor_Go-Shirakawa2.jpg/1280px-Emperor_Go-Shirakawa2.jpg" data-full="https://upload.wikimedia.org/wikipedia/commons/a/a9/Emperor_Go-Shirakawa2.jpg" alt="Portrait of a ceremonial emperor" loading="lazy" decoding="async" /></div><figcaption>Portrait of the ex Emperor Go Shirakawa, from the Tenshi Sekkan Miei, early 14th century. Wikimedia Commons, Museum of the Imperial Collections, Tokyo. Public domain.</figcaption></figure>
+        <div class="entry-citation" data-stagger><span class="label">Source</span>Kasulis, Thomas. "Japanese Philosophy." In The Stanford Encyclopedia of Philosophy (Summer 2024 Edition), edited by Edward N. Zalta and Uri Nodelman. https://plato.stanford.edu/archives/sum2024/entries/japanese-philosophy/.</div>
+      </section>
+    </div>
+
+    <!-- theme navigation footer -->
+    <nav class="theme-footer">
+      <a class="prev" href="warrior.html">
+        <div class="arrow-row"><span class="arr">&laquo;</span></div>
+        <small>Previous</small>
+        <strong>The Warrior</strong>
+      </a>
+      <a class="next" href="culture.html">
+        <small>Next</small>
+        <strong>The Culture</strong>
+        <div class="arrow-row"><span class="arr">&raquo;</span></div>
+      </a>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">THE WAY OF THE SAMURAI &nbsp;·&nbsp; FEUDAL JAPAN, 900 TO 1300 CE</footer>
+
+  <!-- Three.js (ambient sakura petal field) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Way of the Sword | The Rise of the Samurai</title>
+  <meta name="description" content="An immersive history of how the samurai built a new civilization in feudal Japan between 900 and 1300 CE." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Page transition overlay -->
+  <div id="transition-overlay"><div class="ember-layer"></div></div>
+
+  <!-- Falling sakura petals -->
+  <canvas id="sakura-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__brand">Way of the <span>Sword</span></a>
+    <button class="nav__toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <ul class="nav__links">
+      <li><a href="pages/code.html" data-transition>The Code</a></li>
+      <li><a href="pages/warrior.html" data-transition>The Warrior</a></li>
+      <li><a href="pages/power-shift.html" data-transition>The Power Shift</a></li>
+      <li><a href="pages/culture.html" data-transition>The Culture</a></li>
+      <li><a href="pages/legacy.html" data-transition>The Legacy</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO with Three.js -->
+  <header class="hero">
+    <div id="hero-canvas"></div>
+    <div class="hero__veil"></div>
+    <div class="hero__content">
+      <p class="hero__kicker">Feudal Japan &middot; 900 to 1300 CE</p>
+      <h1 class="hero__title">Way of the <em>Sword</em></h1>
+      <p class="hero__thesis">
+        The samurai were the architects of a new civilization. They dismantled imperial
+        authority and replaced it with a culture where military discipline, artistic
+        refinement, and a strict honor code defined what it meant to hold power in Japan.
+      </p>
+    </div>
+    <div class="hero__scroll">Scroll to Enter</div>
+  </header>
+
+  <!-- Intro parallax -->
+  <section class="parallax">
+    <div class="parallax__layer layer-sky"    data-speed="0.05"></div>
+    <div class="parallax__layer layer-moon"   data-speed="0.12"></div>
+    <div class="parallax__layer layer-fog-far" data-speed="0.22"></div>
+    <div class="parallax__layer layer-mountain-far"  data-speed="0.3"></div>
+    <div class="parallax__layer layer-mountain-near" data-speed="0.5"></div>
+    <div class="parallax__layer layer-fog-near" data-speed="0.65"></div>
+    <div class="parallax__content">
+      <p class="eyebrow reveal">A Civilization Forged in Steel</p>
+      <h2 class="h-section reveal delay-1">When the brush yielded to the <em>blade</em></h2>
+      <p class="lede reveal delay-2">
+        For four centuries the warriors of Japan rose from provincial guards into the
+        true masters of the realm. What follows is the story of that ascent, told in
+        five movements.
+      </p>
+    </div>
+  </section>
+
+  <!-- Thesis statement section -->
+  <section class="section" style="text-align:center;">
+    <div class="divider reveal"><span class="divider__mark">&#10070;</span></div>
+    <p class="eyebrow reveal">The Thesis</p>
+    <h2 class="h-section reveal delay-1">Power, redefined by those who <em>wielded</em> it</h2>
+    <p class="lede reveal delay-2" style="margin:0 auto;">
+      Between 900 and 1300 CE the samurai did not merely seize authority. They reimagined
+      it. Discipline, art, and honor became the measure of a ruler, and the old court
+      faded into ceremony.
+    </p>
+  </section>
+
+  <!-- IMMERSIVE forest tunnel -->
+  <section class="immersive">
+    <div class="immersive__sticky">
+      <div id="tunnel-canvas"></div>
+      <div class="immersive__overlay">
+        <p class="eyebrow">Enter the Dark Wood</p>
+        <h2 class="immersive__title">Walk the night road toward the castle, where the warrior class waits in the dark.</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- THEME GRID -->
+  <section class="themes">
+    <div class="themes__head">
+      <p class="eyebrow reveal">Five Movements</p>
+      <h2 class="h-section reveal delay-1">Choose your <em>path</em></h2>
+    </div>
+    <div class="theme-grid">
+      <a class="theme-card reveal" href="pages/code.html" data-transition>
+        <span class="theme-card__num">01</span>
+        <h3 class="theme-card__title">The <em>Code</em></h3>
+        <p class="theme-card__desc">Bushido, the bond of lord and vassal, seppuku, and honor woven into daily life.</p>
+        <span class="theme-card__go">Enter &#8594;</span>
+      </a>
+      <a class="theme-card reveal delay-1" href="pages/warrior.html" data-transition>
+        <span class="theme-card__num">02</span>
+        <h3 class="theme-card__title">The <em>Warrior</em></h3>
+        <p class="theme-card__desc">Training, the soul of the sword, the craft of armor, and the art of war.</p>
+        <span class="theme-card__go">Enter &#8594;</span>
+      </a>
+      <a class="theme-card reveal delay-2" href="pages/power-shift.html" data-transition>
+        <span class="theme-card__num">03</span>
+        <h3 class="theme-card__title">The Power <em>Shift</em></h3>
+        <p class="theme-card__desc">The Heian decline, the Genpei War, Kamakura, and an emperor made symbol.</p>
+        <span class="theme-card__go">Enter &#8594;</span>
+      </a>
+      <a class="theme-card reveal" href="pages/culture.html" data-transition>
+        <span class="theme-card__num">04</span>
+        <h3 class="theme-card__title">The <em>Culture</em></h3>
+        <p class="theme-card__desc">Zen, the poetry of waka, women of the warrior class, and faith reshaped.</p>
+        <span class="theme-card__go">Enter &#8594;</span>
+      </a>
+      <a class="theme-card reveal delay-1" href="pages/legacy.html" data-transition>
+        <span class="theme-card__num">05</span>
+        <h3 class="theme-card__title">The <em>Legacy</em></h3>
+        <p class="theme-card__desc">A lasting culture, a permanent model of government, and an enduring ideal.</p>
+        <span class="theme-card__go">Enter &#8594;</span>
+      </a>
+      <div class="theme-card reveal delay-2" style="cursor:default;display:flex;flex-direction:column;justify-content:center;">
+        <span class="theme-card__num">&#10070;</span>
+        <h3 class="theme-card__title" style="font-size:1.2rem;color:var(--ink-dim);">Begin with the Code, or wander as you please.</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__mon">&#10070;</div>
+    <p>Way of the Sword &middot; An interactive history of the samurai, 900 to 1300 CE.</p>
+    <p style="margin-top:0.5rem;">Built with HTML, CSS, JavaScript, and <a href="https://threejs.org" target="_blank" rel="noopener">Three.js</a>.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/sakura.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/tunnel.js"></script>
+  <script src="js/scroll.js"></script>
+</body>
+</html>

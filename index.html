@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Way of the Samurai</title>
+  <meta name="description" content="The rise of samurai culture in feudal Japan, 900 to 1300 CE." />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Way of the Samurai" />
+  <meta property="og:title" content="The Way of the Samurai" />
+  <meta property="og:description" content="The rise of samurai culture in feudal Japan, 900 to 1300 CE." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="The Way of the Samurai" />
+  <meta name="twitter:description" content="The rise of samurai culture in feudal Japan, 900 to 1300 CE." />
+
+  <!-- favicon (JS injects the same mark as a fallback if this is stripped) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%230a0a0a'/><circle cx='16' cy='16' r='11' fill='none' stroke='%238b0000' stroke-width='2.5'/><circle cx='16' cy='16' r='4.5' fill='%23c9a84c'/></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+
+  <!-- loading screen -->
+  <div class="loader">
+    <div class="mon"><span class="mon-core"></span></div>
+    <div class="loader-title">The Way of the Samurai</div>
+    <div class="progress-track"><div class="progress-fill"></div></div>
+    <div class="progress-pct">0 %</div>
+  </div>
+
+  <!-- page transition wipe -->
+  <div class="transition-panel"></div>
+
+  <!-- global sakura particle field (500 on the landing page) -->
+  <canvas id="sakura-canvas" data-count="500"></canvas>
+
+  <!-- navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-title">THE WAY OF THE <span>SAMURAI</span></a>
+    <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="code.html">The Code</a></li>
+      <li><a href="warrior.html">The Warrior</a></li>
+      <li><a href="powershift.html">The Power Shift</a></li>
+      <li><a href="culture.html">The Culture</a></li>
+      <li><a href="legacy.html">The Legacy</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-vignette"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">The Way of the<span class="accent">Samurai</span></h1>
+        <p class="hero-sub">
+          Between 900 and 1300 CE a warrior class became the architects of a new civilization,
+          dismantling imperial authority and replacing it with a culture where military
+          discipline, artistic refinement, and a strict honor code defined what it meant to hold
+          power in Japan.
+        </p>
+      </div>
+      <div class="scroll-cue">
+        <span>Descend</span>
+        <span class="arrow"></span>
+      </div>
+    </section>
+
+    <!-- TUNNEL -->
+    <section class="tunnel-section" aria-hidden="true">
+      <div class="tunnel"></div>
+      <div class="tunnel-kanji">武士道</div>
+      <div class="tunnel-caption">Approach the gate</div>
+    </section>
+
+    <!-- THESIS + THEME CARDS -->
+    <section class="section thesis container reveal">
+      <p class="eyebrow" data-stagger>The Argument</p>
+      <h2 data-stagger>A Civilization Forged in Iron and Ink</h2>
+      <p class="lead" data-stagger>
+        The samurai did not merely seize power. They redefined it. Over four centuries the
+        ceremonial court of Heian gave way to a martial society that fused the sword with the
+        brush, governance with loyalty, and life with a readiness to die well. What follows is
+        the story of that transformation, told across five themes.
+      </p>
+
+      <div class="brushstroke"></div>
+
+      <div class="card-grid">
+        <a class="theme-card reveal" href="code.html" data-stagger>
+          <span class="num">I</span>
+          <h3>The Code</h3>
+          <p>Bushido, loyalty, and the discipline of honorable death.</p>
+          <span class="go">Enter &rsaquo;</span>
+        </a>
+        <a class="theme-card reveal" href="warrior.html" data-stagger>
+          <span class="num">II</span>
+          <h3>The Warrior</h3>
+          <p>Training, the sword, armor, and the art of war.</p>
+          <span class="go">Enter &rsaquo;</span>
+        </a>
+        <a class="theme-card reveal" href="powershift.html" data-stagger>
+          <span class="num">III</span>
+          <h3>The Power Shift</h3>
+          <p>The fall of the court and the rise of the shogun.</p>
+          <span class="go">Enter &rsaquo;</span>
+        </a>
+        <a class="theme-card reveal" href="culture.html" data-stagger>
+          <span class="num">IV</span>
+          <h3>The Culture</h3>
+          <p>Zen, poetry, faith, and the women of the warrior age.</p>
+          <span class="go">Enter &rsaquo;</span>
+        </a>
+        <a class="theme-card reveal" href="legacy.html" data-stagger>
+          <span class="num">V</span>
+          <h3>The Legacy</h3>
+          <p>Why the warrior model endured for centuries.</p>
+          <span class="go">Enter &rsaquo;</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">THE WAY OF THE SAMURAI &nbsp;·&nbsp; FEUDAL JAPAN, 900 TO 1300 CE</footer>
+
+  <!-- Three.js (ambient sakura petal field) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="main.js?v=2"></script>
+</body>
+</html>
